@@ -33,7 +33,7 @@ class Algorithms:
 
     def comprehend_algo(self, text, id, uniqueId, flag, type):
         #TODO keep it environment configuration files. Security Keys.
-        comprehend = boto3.client(aws_access_key_id='AKIAJPS2BREVEGO3DBRA', aws_secret_access_key = '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',service_name='comprehend', region_name='us-east-1')
+        comprehend = boto3.client(aws_access_key_id='GETITFROMYOURAMAZON', aws_secret_access_key = 'GETITFROMAMAZONALSO',service_name='comprehend', region_name='us-east-1')
         time.sleep(1)
         index_keyword = dict(comprehend.detect_key_phrases(Text=text, LanguageCode='en'))
         return self.format_key_value(index_keyword['KeyPhrases'], id, uniqueId, flag, type)
