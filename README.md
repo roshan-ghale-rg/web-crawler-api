@@ -1,2 +1,2 @@
 # web-crawler-api
-amazon website products scrapping tool
+Crawls the data from the amazon website based upon the ASIN number and its respective categories and collects the data of their respective competitors.
